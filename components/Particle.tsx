@@ -114,7 +114,7 @@ export const ParticleApp = () => {
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
-        className="h-[400px]"
+        className="h-[600px] md:h-[400px]"
       />
     );
   }

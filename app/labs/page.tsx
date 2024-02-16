@@ -8,7 +8,7 @@ type Props = {};
 
 const page = (props: Props) => {
   return (
-    <div>
+    <div className="relative">
       <Header />
       <div className="min-h-screen">
         <Hero />
