@@ -14,11 +14,11 @@ const About = (props: Props) => {
         <div>
           <p className="font-[500] text-secondary font-inter">Morphlith Labs</p>
           <p>
-            Morphlith Labs is more than a space; it's an incubator of
+            Morphlith Labs is more than a space; it&apos;s an incubator of
             breakthroughs. As we delve into the realms of possibility, our team
             of visionaries, researchers, and engineers collaborate seamlessly to
             push the boundaries of technology. This is where hypotheses are
-            tested, prototypes are perfected, and the seeds of tomorrow's
+            tested, prototypes are perfected, and the seeds of tomorrow&apos;s
             innovations are sown.
           </p>
         </div>
