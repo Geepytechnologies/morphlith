@@ -18,6 +18,11 @@ const config: Config = {
         secondary: "#2d2f7b",
         offset: "#11b68e",
       },
+      fontFamily: {
+        inter: ["var(--font-inter)"],
+        pop: ["var(--font-popp)"],
+        cab: ["var(--font-cab)"],
+      },
     },
   },
   plugins: [],
