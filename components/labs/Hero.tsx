@@ -36,7 +36,7 @@ const Hero = (props: Props) => {
                 boundaries of conventional thinking, where ideas are not just
                 conceived but meticulously crafted into technological marvels.
               </h1>
-              <button className="px=3 py-2 rounded-md bg-offset text-white">
+              <button className="px-3 py-2 rounded-md bg-offset text-white">
                 Discover more
               </button>
             </div>
