@@ -30,6 +30,13 @@ body {
   align-items: center;
 }
 
+.scaling-element {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transition: transform 0.3s ease-in-out;
+}
+
 .sidebar {
   width: 0px;
   position: fixed;

@@ -1,7 +1,8 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Image from "next/image";
-import art from "../../public/morphlith-art.png";
+import art from "../public/morphlith-art.png";
+import ScalingElement from "@/components/ScalingElement";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <div className=" relative">
           <Image src={art} alt="" />
         </div>
+        {/* <ScalingElement /> */}
       </main>
       <Footer />
     </>

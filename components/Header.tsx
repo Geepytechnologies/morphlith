@@ -6,7 +6,7 @@ type Props = {};
 
 const Header = (props: Props) => {
   return (
-    <div className="h-[90px] sticky top-0  flex items-center justify-between px-2">
+    <div className="h-[90px] sticky top-0 z-[888] bg-white flex items-center justify-between px-2">
       <Logo />
       <div className="flex gap-3 items-center">
         <Link href={"/"}>Home</Link>
