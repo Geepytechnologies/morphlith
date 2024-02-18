@@ -11,7 +11,7 @@ const Header = (props: Props) => {
       <div className="flex gap-3 items-center">
         <Link href={"/"}>Home</Link>
         <Link href={"/"}>About Us</Link>
-        <Link href={"/"}>Home</Link>
+        <Link href={"/labs"}>Labs</Link>
       </div>
     </div>
   );

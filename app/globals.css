@@ -34,6 +34,14 @@ body {
   width: 0px;
   position: fixed;
   overflow-x: hidden;
+  /* transition-delay: 5s; */
+  transition: width 0.3s ease-in-out 0.2s;
+  /* transition: 0.5s;  */
+}
+.sidebarbackground {
+  width: 0px;
+  position: fixed;
+  overflow-x: hidden;
   transition: 0.5s; /* Property to be animated, duration, easing function */
 }
 /* .sidebar-open {

@@ -8,9 +8,9 @@ const About = (props: Props) => {
   return (
     <div className="p-3 mt-[50px]">
       <div className="flex flex-col md:flex-row">
-        <div className=" relative">
+        {/* <div className=" relative">
           <Image src={art} alt="" />
-        </div>
+        </div> */}
         <div>
           <p className="font-[500] text-secondary font-inter">Morphlith Labs</p>
           <p>

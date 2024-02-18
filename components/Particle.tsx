@@ -58,7 +58,7 @@ export const ParticleApp = () => {
         },
         modes: {
           push: {
-            quantity: 6,
+            quantity: 10,
           },
           repulse: {
             distance: 200,
@@ -114,7 +114,7 @@ export const ParticleApp = () => {
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
-        className="h-[600px] md:h-[400px]"
+        className="h-[700px] md:h-[400px]"
       />
     );
   }
