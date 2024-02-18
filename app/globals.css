@@ -30,6 +30,35 @@ body {
   align-items: center;
 }
 
+.sidebar {
+  width: 0px;
+  position: fixed;
+  overflow-x: hidden;
+  transition: 0.5s; /* Property to be animated, duration, easing function */
+}
+/* .sidebar-open {
+  width: 200px; /* Adjust as needed based on your design 
+} */
+
+.sidebar.active {
+  left: 0; /* Adjust as needed based on your design */
+}
+
+/* .sidebar:hover {
+  width: 500px; 
+} */
+
+.animated-div {
+  width: 100px;
+  height: 50px;
+  background-color: lightblue;
+  transition: width 0.3s ease; /* Property to be animated, duration, easing function */
+}
+
+.animated-div:hover {
+  width: 200px; /* New width on hover */
+}
+
 /* @layer utilities {
   .text-balance {
     text-wrap: balance;

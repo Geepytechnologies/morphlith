@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useRef, useState } from "react";
 import Logo from "../Logo";
 import Link from "next/link";
 import Image from "next/image";
@@ -10,6 +11,25 @@ import { FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 type Props = {};
 
 const Header = (props: Props) => {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const sidebar = useRef<HTMLDivElement>(null);
+
+  const toggleSidebar = () => {
+    console.log(sidebarOpen);
+    setSidebarOpen(!sidebarOpen);
+  };
+  const open = () => {
+    if (sidebar.current) {
+      sidebar.current.style.width = "300px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+  };
+  const close = () => {
+    if (sidebar.current) {
+      sidebar.current.style.width = "0px";
+      document.body.style.backgroundColor = "white";
+    }
+  };
   return (
     <>
       <div className="h-[90px] bg-white sticky top-0 z-[777] flex items-center justify-between px-2">
@@ -22,57 +42,41 @@ const Header = (props: Props) => {
           <Link href={"/"}>Portfolio</Link>
           <Link href={"/"}>Contact</Link>
         </div>
-        <div className="border flex md:hidden border-[#7d3e91] rounded-sm p-1">
+        <div
+          onClick={open}
+          className="border flex md:hidden border-[#7d3e91] rounded-sm p-1"
+        >
           <HiOutlineMenuAlt1 className="text-[#7d3e91] text-[20px]" />
         </div>
       </div>
       {/* sidebar */}
-      <div className="h-screen w-screen absolute top-0 z-[888] flex">
-        <div className="flex-1 bg-[rgba(0,0,0,0.6)]"></div>
-        <div className="bg-white w-[300px]">
-          <div className="flex justify-end my-3 pr-3">
-            <div className="border self-end flex md:hidden border-[#7d3e91] rounded-sm p-1">
-              <IoMdClose className="text-[#7d3e91] text-[20px]" />
-            </div>
+
+      <div
+        ref={sidebar}
+        className={`bg-white top-0 left-0 sidebar h-screen z-[888]  `}
+      >
+        <div className="flex justify-end py-4 pr-3">
+          <div
+            onClick={close}
+            className="border self-end flex md:hidden border-[#7d3e91] rounded-sm p-1"
+          >
+            <IoMdClose className="text-[#7d3e91] text-[20px]" />
           </div>
-          <Image src={logovertical} alt="" />
-          <div className="flex flex-col gap-3 text-xl">
-            <Link href={"/"}>Home</Link>
-            <Link href={"/"}>About</Link>
-            <Link href={"/"}>Services</Link>
-            <Link href={"/"}>Blog</Link>
-            <Link href={"/"}>Portfolio</Link>
-            <Link href={"/"}>Contact</Link>
-          </div>
-          <div className="">
-            {/* <p className="text-offset">Socials</p> */}
-            <div className="flex items-center gap-3">
-              <Link
-                href=""
-                className="border h-7 w-7 flex items-center justify-center border-[#AF00ED] rounded-full hover:border-opacity-80 hover:text-opacity-80 text-[#AF00ED]"
-              >
-                <FaFacebookF />
-              </Link>
-              <Link
-                href=""
-                className="border h-7 w-7 flex items-center justify-center border-white rounded-full hover:border-opacity-80 hover:text-opacity-80 text-white"
-              >
-                <FaTwitter />
-              </Link>
-              <Link
-                href=""
-                className="border h-7 w-7 flex items-center justify-center border-white rounded-full hover:border-opacity-80 hover:text-opacity-80 text-white"
-              >
-                <FaLinkedinIn />
-              </Link>
-              <Link
-                href=""
-                className="border h-7 w-7 flex items-center justify-center border-white rounded-full hover:border-opacity-80 hover:text-opacity-80 text-white"
-              >
-                <FaInstagram />
-              </Link>
-            </div>
-          </div>
+        </div>
+        <div className="flex items-center justify-center w-full">
+          <img
+            src={"/morphlithlogovertical.png"}
+            alt=""
+            className=" h-[200px]"
+          />
+        </div>
+        <div className="flex flex-col items-center w-full gap-3 text-xl">
+          <Link href={"/"}>Home</Link>
+          <Link href={"/"}>About</Link>
+          <Link href={"/"}>Services</Link>
+          <Link href={"/"}>Blog</Link>
+          <Link href={"/"}>Portfolio</Link>
+          <Link href={"/"}>Contact</Link>
         </div>
       </div>
     </>
