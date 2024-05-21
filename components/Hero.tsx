@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import lady from "../public/ladyfull.png";
-import plan from "../public/plan.jpg";
+import plan from "../public/futuristic.jpg";
 
 type Props = {};
 
@@ -18,18 +18,18 @@ const Hero = (props: Props) => {
           <div className="flex flex-col justify-center md:basis-[50%] ">
             <div className="flex flex-col items-center md:items-start gap-4">
               <h1 className="text-[30px] md:text-[40px] font-cab text-white font-[500]">
-                A Research focused Tech Organisation
+                Where Research Meets Innovation
               </h1>
               <h1 className=" font-cab text-center md:text-left text-white font-[400]">
-                Morphlith has its focus on innovation and building solutions and
-                technologies, spanning both software and hardware domains.
+                Morphlith is a research-driven organization developing solutions
+                across diverse sectors. both software and hardware domains.
               </h1>
             </div>
           </div>
           <div className=" text-white w-full font-cab md:basis-[50%] flex items-center justify-center">
-            <div className="relative w-full h-full flex justify-center">
+            {/* <div className="relative w-full h-full flex justify-center">
               <Image src={lady} alt="morphlith" className="bg-center" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

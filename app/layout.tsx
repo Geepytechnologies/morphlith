@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Poppins, Cabin } from "next/font/google";
+import { Inter, Poppins, Cabin, Barlow, Jost } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -21,6 +21,18 @@ const cabin = Cabin({
   variable: "--font-cab",
   weight: ["400", "500", "600", "700"],
 });
+const barlow = Barlow({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-barl",
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
+});
+const jost = Jost({
+  subsets: ["cyrillic"],
+  display: "swap",
+  variable: "--font-jost",
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Morphlith",
@@ -35,7 +47,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${cabin.variable} ${poppins.variable} `}
+      className={`${inter.variable} ${cabin.variable} ${poppins.variable} ${barlow.variable} ${jost.variable} `}
     >
       <body>{children}</body>
     </html>

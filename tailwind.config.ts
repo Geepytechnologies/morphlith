@@ -22,6 +22,8 @@ const config: Config = {
         inter: ["var(--font-inter)"],
         pop: ["var(--font-popp)"],
         cab: ["var(--font-cab)"],
+        barl: ["var(--font-barl)"],
+        jost: ["var(--font-jost)"],
       },
     },
   },

@@ -59,7 +59,7 @@ const Header = (props: Props) => {
       >
         <div
           ref={sidebar}
-          className={`bg-white top-0 left-0 sidebar h-screen z-[888]  `}
+          className={`bg-white top-0 left-0 sidebar h-screen z-[888]`}
         >
           <div className="flex h-[90px] items-center justify-end pr-3">
             <div
