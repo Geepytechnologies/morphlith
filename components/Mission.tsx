@@ -15,7 +15,7 @@ const Mission = (props: Props) => {
         <h2 className="leading-[30px] font-[400] font-jost">
           At Morphlith, we&apos;re a team fueled by curiosity and a passion for
           groundbreaking research. We believe that innovative solutions stem
-          from a deep understanding of the challenges we face. That's why
+          from a deep understanding of the challenges we face. That&apos;s why
           we&apos;re dedicated to conducting cutting-edge research across
           various fields, pushing the boundaries of what&apos;s possible.
         </h2>
