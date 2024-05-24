@@ -3,12 +3,20 @@ import Logo from "../Logo";
 import Link from "next/link";
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa6";
+import ReactGA from "react-ga4";
+
 type Props = {};
 
 const Footer = (props: Props) => {
   const year = new Date().getFullYear();
+  const firesocialevent = (social: string) => {
+    ReactGA.event({
+      category: "Social",
+      action: social,
+    });
+  };
   return (
-    <div className="min-h-[600px] md:min-h-[350px] flex flex-col relative bg-secondary p-3">
+    <div className="min-h-[600px] md:min-h-[450px] flex flex-col relative bg-secondary p-3">
       <div className="w-full h-full absolute top-0 left-0 bg-[rgba(0,0,0,0.4)]"></div>
       <div className="w-full h-full absolute top-0 left-0 flex flex-col p-3">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-2   font-cab  text-white gap-4">
@@ -56,7 +64,8 @@ const Footer = (props: Props) => {
                 <FaTwitter />
               </Link>
               <Link
-                href=""
+                onClick={() => firesocialevent("linkedin")}
+                href="https://linkedin.com/company/morphlith"
                 className="border h-7 w-7 flex items-center justify-center border-white rounded-full hover:border-opacity-80 hover:text-opacity-80 text-white"
               >
                 <FaLinkedinIn />

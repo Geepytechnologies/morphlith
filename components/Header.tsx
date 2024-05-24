@@ -36,7 +36,7 @@ const Header = (props: Props) => {
     <>
       <div className="h-[90px] bg-white sticky top-0 z-[777] flex items-center justify-between px-2">
         <Logo />
-        <div className=" hidden md:flex gap-3 items-center">
+        <div className="font-cab font-[500] hidden md:flex gap-3 items-center">
           <Link href={"/"}>Home</Link>
           <Link href={"/"}>About</Link>
           <Link href={"/"}>Services</Link>
