@@ -45,7 +45,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const measurementID = process.env.MEASUREMENTID || "";
+  const measurementID = process.env.NEXT_PUBLIC_MEASUREMENTID || "";
 
   ReactGA.initialize(measurementID);
   return (

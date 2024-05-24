@@ -11,6 +11,9 @@ const Cookieconsent = (props: Props) => {
   const handleAccept = (e: any) => {
     setCookie("ml-cookie", true, { path: "/" });
   };
+  const handleDecline = (e: any) => {
+    setCookie("ml-cookie", false, { path: "/" });
+  };
   return (
     <div className="flex flex-col bg-white rounded-[16px] w-[350px] h-auto p-[20px] gap-2">
       <h1 className="font-[700] text-[1.2rem] font-cab">We Use Cookies</h1>
@@ -25,7 +28,10 @@ const Cookieconsent = (props: Props) => {
         </span>
       </h2>
       <div className="flex w-full  gap-4 text-[0.85rem] font-jost">
-        <button className="border border-black rounded-md px-4 py-2">
+        <button
+          onClick={handleDecline}
+          className="border border-black rounded-md px-4 py-2"
+        >
           Reject All
         </button>
         <button
