@@ -39,10 +39,10 @@ const Header = (props: Props) => {
         <div className="font-cab font-[500] hidden md:flex gap-3 items-center">
           <Link href={"/"}>Home</Link>
           <Link href={"/"}>About</Link>
-          <Link href={"/"}>Services</Link>
-          <Link href={"/"}>Blog</Link>
-          <Link href={"/"}>Portfolio</Link>
-          <Link href={"/"}>Contact</Link>
+          <Link href={"/labs"}>Labs</Link>
+          <Link href={"/"}>Products</Link>
+          <Link href={"/"}>Communities</Link>
+          <Link href={"/"}>Stores</Link>
         </div>
         <div
           onClick={open}

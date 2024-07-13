@@ -18,6 +18,14 @@ const Hero = (props: Props) => {
         <div className="min-h-[600px] md:h-[400px] w-full absolute top-0 left-0 bottom-0 flex flex-col md:flex-row justify-center items-center gap-2 lg:gap-5 py-4 px-3 lg:p-4 z-30">
           <div className="flex flex-col justify-center md:basis-[50%] ">
             <div className="flex flex-col items-center md:items-start gap-4">
+              {/* beyond the ordinary */}
+              <div className="flex gap-2 items-center">
+                <div className="w-[40px] bg-offset h-[2px]"></div>
+                <span className="text-white uppercase">
+                  Beyond the ordinary
+                </span>
+                <div className="w-[40px] bg-offset h-[2px]"></div>
+              </div>
               <h1 className="text-[30px] md:text-[40px] font-cab text-white font-[500]">
                 Where Research Meets Innovation
               </h1>

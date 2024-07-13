@@ -1,11 +1,12 @@
 import React from "react";
+import ImageCardHero from "./common/cards/ImageCardHero";
 
 type Props = {};
 
 const Mission = (props: Props) => {
   return (
-    <div className="flex items-center p-[20px]">
-      <div className="">
+    <div className="flex flex-col md:flex-row md:items-center justify-between gap-4  p-[20px]">
+      <div className="w-full md:w-[50%] lg:w-[60%] h-full order-2 p-2 md:order-1">
         <h2 className="text-offset font-cab text-[14px] font-[600] leading-[30px]">
           WHO WE ARE
         </h2>
@@ -20,7 +21,9 @@ const Mission = (props: Props) => {
           various fields, pushing the boundaries of what&apos;s possible.
         </h2>
       </div>
-      <div className=""></div>
+      <div className="h-full flex justify-center order-1 md:order-2">
+        <ImageCardHero />
+      </div>
     </div>
   );
 };
