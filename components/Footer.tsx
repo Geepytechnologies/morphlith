@@ -19,10 +19,10 @@ const Footer = (props: Props) => {
     });
   };
   return (
-    <div className="min-h-[600px] md:min-h-[450px] bg-fixed flex flex-col relative bg-[url('/futuristic.jpg')] p-3">
+    <div className="min-h-[600px] h-auto md:min-h-[450px] bg-fixed flex flex-col relative bg-[url('/futuristic.jpg')] p-3">
       <div className="w-full h-full absolute top-0 left-0 bg-[rgba(0,0,0,0.8)]"></div>
-      <div className="w-full h-full absolute top-0 left-0 flex flex-col px-10  pt-10">
-        <div className="flex justify-between">
+      <div className="w-full h-full absolute top-0 left-0 flex flex-col p-2 md:px-10  md:pt-10">
+        <div className="flex flex-col md:flex-row justify-between">
           <div className="flex flex-col gap-4">
             <Logowhite />
             <div className="flex mt-3">
@@ -77,7 +77,7 @@ const Footer = (props: Props) => {
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-2   font-cab  text-white gap-4">
-            <div className="flex flex-col gap-3 text-[14px]">
+            <div className="flex flex-col gap-1 text-[14px]">
               <p className="text-offset font-[600] text-[16px]">Company</p>
               <p>Our Team</p>
               <p>MorphlithStores</p>
@@ -85,7 +85,7 @@ const Footer = (props: Props) => {
               <p>MorphlithNews</p>
               <p>Careers</p>
             </div>
-            <div className="flex flex-col gap-3 text-[14px]">
+            <div className="flex flex-col gap-1 text-[14px]">
               <p className="text-offset font-[600] text-[16px]">Get In Touch</p>
               <p>Chat with us</p>
               <p>Contact Us</p>

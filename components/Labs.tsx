@@ -6,6 +6,7 @@ type Props = {};
 const Labs = (props: Props) => {
   return (
     <div className="flex flex-col items-center my-5">
+      <img src="/computerlabs.png" />
       <div className="w-[80%] flex flex-col gap-2">
         <h2 className="gradient-text text-center font-cab text-[24px] font-[600] leading-[30px]">
           Morphlith Labs
