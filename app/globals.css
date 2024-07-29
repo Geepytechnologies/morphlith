@@ -73,6 +73,13 @@ body {
 .animated-div:hover {
   width: 200px; /* New width on hover */
 }
+/* styles.css */
+.gradient-text {
+  background: linear-gradient(to right, #742370 0%, #11b68e 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 /* @layer utilities {
   .text-balance {

@@ -9,6 +9,8 @@ import useStore from "@/config/store";
 import Cookieconsent from "@/components/Cookieconsent";
 import { motion } from "framer-motion";
 import { useCookies } from "react-cookie";
+import Products from "@/components/Products";
+import Labs from "@/components/Labs";
 
 export default function Home() {
   const [cookies, setCookie] = useCookies(["ml-cookie"]);
@@ -19,6 +21,8 @@ export default function Home() {
       <main className="flex bg-white min-h-screen flex-col">
         <Hero />
         <Mission />
+        <Labs />
+        <Products />
       </main>
       {/* cookie */}
       {!cookies["ml-cookie"] && (

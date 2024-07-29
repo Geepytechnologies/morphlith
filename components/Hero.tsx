@@ -27,7 +27,7 @@ const Hero = (props: Props) => {
                 <div className="w-[40px] bg-offset h-[2px]"></div>
               </div>
               <h1 className="text-[30px] md:text-[40px] font-cab text-white font-[500]">
-                Where Research Meets Innovation
+                Shaping a Better Future Through Technology
               </h1>
               <h1 className=" font-cab text-center md:text-left text-white font-[400]">
                 Morphlith is a research-driven organization developing solutions
