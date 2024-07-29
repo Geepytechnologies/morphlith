@@ -12,7 +12,7 @@ const About = (props: Props) => {
           <Image src={art} alt="" />
         </div> */}
         <div>
-          <p className="font-[500] text-secondary font-inter">Morphlith Labs</p>
+          <p className="font-[500] text-offset font-inter">Morphlith Labs</p>
           <p>
             Morphlith Labs is more than a space; it&apos;s an incubator of
             breakthroughs. As we delve into the realms of possibility, our team
