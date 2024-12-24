@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 type Props = {};
@@ -9,7 +10,9 @@ const Products = (props: Props) => {
         <h2 className="gradient-text text-center font-cab text-[24px] font-[600] leading-[30px]">
           Our Featured Products
         </h2>
-        <div></div>
+        <div>
+          <img alt="dealforts" src={"/dealfort2.png"} className="w-[40%]" />
+        </div>
       </div>
     </div>
   );
