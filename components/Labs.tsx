@@ -14,7 +14,7 @@ const Labs = (props: Props) => {
         {/* <h3 className="text-[20px] text-center md:text-[25px] font-cab text-black font-[500]">
           Building Tomorrow&apos;s Possibilities
         </h3> */}
-        <h1 className=" font-cab text-center md:text-left font-[400]">
+        <h1 className="font-cab md:text-left font-[400]">
           At Morphlith Labs, we are dedicated to pushing the boundaries of
           technology. Our team specializes in creating cutting-edge websites,
           mobile applications, and cloud services that drive business success

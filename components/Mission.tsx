@@ -22,7 +22,7 @@ const Mission = (props: Props) => {
           commit to continuous improvement
         </h2>
       </div>
-      <div className="h-full flex justify-center order-1 md:order-2">
+      <div className="h-full flex justify-center order-1 md:order-2 p-4">
         <ImageCardHero />
       </div>
     </div>

@@ -28,12 +28,14 @@ const Hero = (props: Props) => {
                 designed to streamline workflows, boost efficiency, and drive
                 success.
               </h1>
-              <Link
-                href={"/labs"}
-                className="px-3 py-2 rounded-[20px] w-max  bg-offset text-white"
-              >
-                Learn more
-              </Link>
+              <div className="">
+                <Link
+                  href={"/labs"}
+                  className="px-3 py-2 rounded-[20px] w-max  bg-offset text-white"
+                >
+                  Get Started
+                </Link>
+              </div>
             </div>
           </div>
           <div className=" text-white w-full font-cab md:basis-[50%] flex items-center justify-center">
