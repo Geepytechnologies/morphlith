@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Poppins, Cabin, Barlow, Jost } from "next/font/google";
 import "./globals.css";
 import ReactGA from "react-ga4";
+import LoaderWrapper from "@/components/LoaderWrapper";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -48,6 +49,7 @@ export default function RootLayout({
   const measurementID = process.env.NEXT_PUBLIC_MEASUREMENTID || "";
 
   ReactGA.initialize(measurementID);
+
   return (
     <html
       lang="en"

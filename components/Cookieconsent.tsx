@@ -16,7 +16,9 @@ const Cookieconsent = (props: Props) => {
   };
   return (
     <div className="flex flex-col bg-white rounded-[16px] w-[350px] h-auto p-[20px] gap-2">
-      <h1 className="font-[700] text-[1.2rem] font-cab">We Use Cookies</h1>
+      <h1 className="font-[700] text-[1.2rem] font-cab">
+        We value your privacy
+      </h1>
       <h2 className="text-[0.85rem] font-jost">
         Our website uses cookies to enhance your user experience. By clicking
         &apos;accept all cookies&apos;, you agree to our use of cookies, and

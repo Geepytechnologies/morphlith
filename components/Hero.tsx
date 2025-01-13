@@ -20,12 +20,13 @@ const Hero = (props: Props) => {
           <div className="flex flex-col justify-center md:basis-[50%] ">
             <div className="flex flex-col items-center md:items-start gap-4">
               <h1 className="text-[30px] md:text-[40px] font-cab text-white font-[500]">
-                Shaping a Better Future Through{" "}
-                <span className="text-offset">Technology.</span>
+                Empowering businesses with cutting-edge&nbsp;
+                <span className="text-offset">productivity solutions.</span>
               </h1>
-              <h1 className=" font-cab text-white font-[400]">
-                Morphlith is a research-driven organization developing solutions
-                across diverse sectors.
+              <h1 className="text-[14px] font-cab text-white font-[400]">
+                Discover innovative business tools and software solutions
+                designed to streamline workflows, boost efficiency, and drive
+                success.
               </h1>
               <Link
                 href={"/labs"}
