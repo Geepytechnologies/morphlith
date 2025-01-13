@@ -11,7 +11,7 @@ const Mission = (props: Props) => {
           WHO WE ARE
         </h2>
         <h1 className="leading-[36px] text-[30px] font-[600] font-cab">
-          Discover Morphlith's Vision
+          Discover Morphlith&apos;s Vision
         </h1>
         <h2 className="leading-[30px] font-[400] font-jost mt-1 max-w-[450px]">
           Morphlith has been at the forefront of revolutionizing business
