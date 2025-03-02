@@ -86,3 +86,75 @@ body {
     text-wrap: balance;
   }
 } */
+
+/* Custom cursor */
+.cursor {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  pointer-events: none; /* Ensure it doesn't interfere with clicks */
+  transform: translate(-50%, -50%);
+  animation: cursorMove 2s infinite ease-in-out;
+}
+
+/* Cursor movement animation */
+@keyframes cursorMove {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+}
+
+/* Ripple effect */
+.ripple {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+}
+
+/* Ripple animation */
+@keyframes rippleEffect {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  90% {
+    opacity: 0.98;
+    scale: 0.98;
+  }
+}
+.pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+.whowearegradient {
+  background: linear-gradient(270deg, #f0eaff 20.93%, #fff 72.2%);
+}
+.labsgradient {
+  background: linear-gradient(269deg, #f6f6fe 7.58%, #fff 86.22%);
+}
+.wave {
+  animation: 2s ease-in-out 0s infinite alternate both running wave;
+}
+@keyframes wave {
+  0% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}

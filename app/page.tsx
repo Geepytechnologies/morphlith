@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Image from "next/image";
 import art from "../public/morphlith-art.png";
-import Hero from "@/components/Hero";
+import Hero from "@/components/v2/Hero";
 import Mission from "@/components/Mission";
 import useStore from "@/config/store";
 import Cookieconsent from "@/components/Cookieconsent";
@@ -11,6 +11,8 @@ import { motion } from "framer-motion";
 import { useCookies } from "react-cookie";
 import Products from "@/components/Products";
 import Labs from "@/components/Labs";
+import WaveDiv from "@/components/Wave";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   const [cookies, setCookie] = useCookies(["ml-cookie"]);
@@ -21,8 +23,9 @@ export default function Home() {
       <main className="flex bg-white min-h-screen flex-col">
         <Hero />
         <Mission />
-        <Labs />
         <Products />
+        <Labs />
+        <Testimonials />
       </main>
       {/* cookie */}
       {!cookies["ml-cookie"] && (
@@ -35,6 +38,7 @@ export default function Home() {
           <Cookieconsent />
         </motion.div>
       )}
+      <WaveDiv />
       <Footer />
     </div>
   );

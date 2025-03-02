@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
-import { Inter, Poppins, Cabin, Barlow, Jost } from "next/font/google";
+import {
+  Inter,
+  Poppins,
+  Cabin,
+  Barlow,
+  Jost,
+  Space_Grotesk,
+} from "next/font/google";
 import "./globals.css";
 import ReactGA from "react-ga4";
 import LoaderWrapper from "@/components/LoaderWrapper";
@@ -9,6 +16,13 @@ const inter = Inter({
   display: "swap",
   variable: "--font-inter",
   weight: ["100", "200", "300", "500", "600", "700"],
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-space-grotesk",
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 const poppins = Poppins({
@@ -53,7 +67,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${cabin.variable} ${poppins.variable} ${barlow.variable} ${jost.variable} `}
+      className={`${inter.variable} ${cabin.variable} ${poppins.variable} ${barlow.variable} ${jost.variable} ${spaceGrotesk.variable} `}
     >
       <body>{children}</body>
     </html>

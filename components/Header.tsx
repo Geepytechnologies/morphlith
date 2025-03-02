@@ -34,15 +34,14 @@ const Header = (props: Props) => {
   };
   return (
     <>
-      <div className="h-[90px] bg-white sticky top-0 z-[777] flex items-center justify-between px-2">
+      <div className="h-[100px] px-10 bg-white sticky top-0 z-[777] flex items-center justify-between">
         <Logo />
-        <div className="font-cab font-[500] hidden md:flex gap-3 items-center">
+        <div className="font-pop font-[500] hidden md:flex gap-3 items-center">
           <Link href={"/"}>Home</Link>
           <Link href={"/"}>About</Link>
           <Link href={"/labs"}>Labs</Link>
           <Link href={"/"}>Products</Link>
           <Link href={"/"}>Communities</Link>
-          <Link href={"/"}>Stores</Link>
         </div>
         <div
           onClick={open}
@@ -82,7 +81,6 @@ const Header = (props: Props) => {
             <Link href={"/labs"}>Labs</Link>
             <Link href={"/"}>Products</Link>
             <Link href={"/"}>Communities</Link>
-            <Link href={"/"}>Stores</Link>
           </div>
         </div>
       </div>

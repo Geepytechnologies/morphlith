@@ -19,39 +19,40 @@ const Footer = (props: Props) => {
     });
   };
   return (
-    <div className="min-h-[600px] h-auto md:min-h-[450px] bg-fixed flex flex-col relative bg-[url('/futuristic.jpg')] p-3">
-      <div className="w-full h-full absolute top-0 left-0 bg-[rgba(0,0,0,0.8)]"></div>
-      <div className="w-full h-full absolute top-0 left-0 flex flex-col p-4 md:px-10  md:pt-10 gap-2">
+    <div className="h-[500px] md:h-[400px] bg-[#f0eff5]  flex flex-col relative p-3">
+      <div className="w-full h-full flex flex-col p-4 md:px-10  md:pt-10 gap-2">
         <div className="flex flex-col md:flex-row justify-between">
           <div className="flex flex-col gap-4">
-            <Logowhite />
+            <Logo />
+            <p className="font-space text-[#6A6A6A] text-[14px]">
+              Your Partner in Building Smarter, Future-Ready Solutions
+            </p>
             <div className="flex mt-3">
               {/* :::socials::: */}
               <div className="">
-                <p className="text-offset">Follow Us</p>
                 <div className="flex items-center gap-3 mt-2">
                   <Link
                     href=""
-                    className="border h-7 w-7 flex items-center justify-center border-white rounded-full hover:border-opacity-80 hover:text-opacity-80 text-white"
+                    className="border h-7 w-7 flex items-center justify-center bg-white rounded-full hover:bg-opacity-80 hover:text-opacity-80 text-secondary"
                   >
                     <FaFacebookF />
                   </Link>
                   <Link
                     href=""
-                    className="border h-7 w-7 flex items-center justify-center border-white rounded-full hover:border-opacity-80 hover:text-opacity-80 text-white"
+                    className="border h-7 w-7 flex items-center justify-center bg-white rounded-full hover:bg-opacity-80 hover:text-opacity-80 text-secondary"
                   >
                     <FaXTwitter />
                   </Link>
                   <Link
                     onClick={() => firesocialevent("linkedin")}
                     href="https://linkedin.com/company/morphlith"
-                    className="border h-7 w-7 flex items-center justify-center border-white rounded-full hover:border-opacity-80 hover:text-opacity-80 text-white"
+                    className="border h-7 w-7 flex items-center justify-center bg-white rounded-full hover:bg-opacity-80 hover:text-opacity-80 text-secondary"
                   >
                     <FaLinkedinIn />
                   </Link>
                   <Link
                     href=""
-                    className="border h-7 w-7 flex items-center justify-center border-white rounded-full hover:border-opacity-80 hover:text-opacity-80 text-white"
+                    className="border h-7 w-7 flex items-center justify-center bg-white rounded-full hover:bg-opacity-80 hover:text-opacity-80 text-secondary"
                   >
                     <FaInstagram />
                   </Link>
@@ -59,9 +60,9 @@ const Footer = (props: Props) => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-2   font-cab  text-white gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-2   font-space  text-[#444] gap-4">
             <div className="flex flex-col gap-1 text-[14px]">
-              <p className="text-offset font-[600] text-[16px]">Company</p>
+              <p className="text-[#060336] font-[700] text-[16px]">Company</p>
               <p>Our Team</p>
               <p>MorphlithStores</p>
               <p>MorphlithHub</p>
@@ -69,7 +70,9 @@ const Footer = (props: Props) => {
               <p>Careers</p>
             </div>
             <div className="flex flex-col gap-1 text-[14px]">
-              <p className="text-offset font-[600] text-[16px]">Get In Touch</p>
+              <p className="text-[#060336] font-[600] text-[16px]">
+                Get In Touch
+              </p>
               <p>Chat with us</p>
               <p>Contact Us</p>
               <Link href={""}>Copyright Statement</Link>
@@ -77,31 +80,15 @@ const Footer = (props: Props) => {
             </div>
           </div>
         </div>
-        {/* Newsletter */}
-        <div className="flex flex-col gap-2">
-          <p className="text-offset">NewsLetter</p>
-          <p className="text-white text-[12px]">
-            Don&apos;t miss to subscribe to our new feeds, kindly fill the form
-            below.
-          </p>
-          <div className="flex gap-2 items-center pl-5 p-2 w-[300px] bg-white rounded-[40px]">
-            <input
-              placeholder="Email Address"
-              className="outline-0 border-0 flex-1"
-            />
-            <div className="cursor-pointer rounded-full p-2 bg-offset">
-              <BsFillSendFill className="text-white" />
-            </div>
-          </div>
-        </div>
-        <div className="w-full flex items-center justify-center text-[14px] mt-auto">
+
+        <div className="w-full flex items-center justify-center text-[14px] mt-auto font-space">
           <div className="w-[90%] md:w-[95%]">
-            <hr />
-            <div className="text-white text-center">
+            <div className="h-[1px] w-full bg-[#73779C]"></div>
+            <div className="text-[#060336] text-center">
               <p className="py-2">
                 Copyright © {year}{" "}
-                <span className="text-offset font-[500]">Morphlith.</span> All
-                Rights Reserved
+                <span className=" font-[500]">Morphlith.</span> All Rights
+                Reserved
               </p>
             </div>
           </div>
