@@ -42,8 +42,8 @@ const Testimonials = (props: Props) => {
             </div>
           </div>
           <p className="text-[#73779C] text-center">
-            Morphlith's productivity tools have transformed the way we work.
-            Highly recommended!
+            Morphlith&apos;s productivity tools have transformed the way we
+            work. Highly recommended!
           </p>
         </div>
         <div className="flex items-center justify-center">
